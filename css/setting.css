@@ -1,0 +1,22 @@
+:root {
+    --background-primary: #232529;
+    --background-navigation: #232529;
+    --text-primary: #e2e3e7;
+    --link_color: #0059b2;
+    --nav-border: #35383f;
+    --header-height: 50px;
+}
+
+body {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link_color);
+}

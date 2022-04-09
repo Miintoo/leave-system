@@ -1,0 +1,17 @@
+main {
+    display: flex;
+}
+main nav {
+    background-color: var(--background-navigation);
+    border-right: 1px solid var(--nav-border);
+    height: calc(100vh - var(--header-height));
+}
+main nav ul {
+    padding-top: 20px;
+}
+
+main nav ul li {
+    width : 150px;
+    margin-bottom: 10px;
+}
+

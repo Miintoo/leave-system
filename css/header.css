@@ -1,0 +1,10 @@
+/* 고정할지는 고민할 것 */
+.header-nav-list {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid var(--nav-border);
+}
+.header-nav-list li {
+    margin: 10px;
+}
