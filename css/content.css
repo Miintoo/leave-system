@@ -93,6 +93,7 @@
     top: 368px;
 }
 
+
 .sec_cal .cal_wrap .day {
     display: flex;
     align-items: center;
@@ -119,12 +120,15 @@
 .sec_cal .cal_wrap .day:nth-child(7n) {
     color: #3c6ffa;
 }
+.sec_cal .cal_wrap .day:nth-child(7n).today {
+    border: 3px solid #f2f2f2;
+}
+.sec_cal .cal_wrap .day.today {
+    border: 3px solid #f2f2f2;
+}
 
 .sec_cal .cal_wrap .day:nth-child(7n +1) {
     color: #ed2a61;
-}
-.sec_cal .cal_wrap .day:nth-child(7n +1).today {
-    border: 3px solid #f2f2f2;
 }
 .sec_cal .cal_wrap .day.disable {
     color: #999;

@@ -7,7 +7,7 @@ main {
 main nav {
     background-color: var(--background-navigation);
     border-right: 1px solid var(--nav-border);
-    height: calc(100vh - var(--header-height));
+    height: 100vh;
 }
 
 main nav ul {
@@ -59,7 +59,7 @@ main nav ul li {
     font-size: 24px;
     font-weight: 700;
 }
-#modal .modal-window .content {
+#modal .modal-window .modal-content {
     padding-top: 10px;
     font-size: 24px;
     font-weight: 700;

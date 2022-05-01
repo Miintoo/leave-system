@@ -1,4 +1,6 @@
 const userData = [{date: "2022-04-13", type: "0"}, {date: "2022-04-12", type: "0"}, {date: "2022-04-10", type: "0"}];
+const modalContent = document.querySelector('.modal-content');
+
 
 function calendarInit() {
   const go_prev = document.querySelector('.go-prev');
@@ -56,7 +58,7 @@ function calendarInit() {
             '<div class="day current leaveDay"' +
             'data-set=' +
             `${currentYear}-` +
-            `${currentMonth < 9 ? `0${currentMonth+1}` : currentMonth + 1}-` +
+            `${currentMonth < 9 ? `0${currentMonth + 1}` : currentMonth + 1}-` +
             `${i}` +
             '>' +
             i +
@@ -104,25 +106,23 @@ const leaveDays = document.querySelectorAll('.current.leaveDay');
 const modal = document.getElementById('modal');
 leaveDays.forEach((value, index) => {
   value.addEventListener('click', (e) => {
-    console.log(e.target.dataset.set);
-    // userData.forEach(value => console.log(value))
     modal.classList.toggle('show');
-    const hi = userData.find(value => value.date === e.target.dataset.set)
-    console.log(hi);
+    const leaveDay = userData.find(value => value.date === e.target.dataset.set);
+    modalContent.textContent = leaveDay.date + ' 타입은 ' + leaveDay.type;
   });
 });
 
 modal.addEventListener("click", e => {
-  const evTarget = e.target
-  if(evTarget.classList.contains("show")) {
+  const evTarget = e.target;
+  if (evTarget.classList.contains("show")) {
     console.log(evTarget);
     // modal.style.display = "none"
     modal.classList.toggle('show');
   }
-})
+});
 
-document.querySelector('.modal-close').addEventListener('click', ()=> {
+document.querySelector('.modal-close').addEventListener('click', () => {
   modal.classList.toggle('show');
-})
+});
 
 
