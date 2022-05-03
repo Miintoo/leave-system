@@ -1,22 +1,33 @@
 :root {
-    --background-primary: #232529;
-    --background-navigation: #232529;
-    --text-primary: #e2e3e7;
-    --link_color: #0059b2;
-    --nav-border: #35383f;
-    --lessonsListBorder: #35383f;
+  --background-primary: #232529;
+  --background-navigation: #232529;
+  --text-primary: #e2e3e7;
+  --login-text-color: black;
+  --login-ui-border-color: #dadada;
+  --link_color: #0059b2;
+  --nav-border: #35383f;
+  --lessonsListBorder: #35383f;
 }
 
 body {
-    background-color: var(--background-primary);
-    color: var(--text-primary);
+  background-color: var(--background-primary);
+  color: var(--text-primary);
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: var(--link_color);
+  text-decoration: none;
+  color: var(--link_color);
+}
+
+input {
+  outline: none;
+}
+
+button {
+  outline: none;
+  border: none;
 }
