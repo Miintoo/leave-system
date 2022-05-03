@@ -7,6 +7,7 @@
 # 개발참여인원
 - 프론트엔드
   - [김현주](https://github.com/hyunjoogo)
+  - [김민혁](https://github.com/Miintoo)
 - 백엔드
   - [유푸름](https://github.com/ypr821)
 # 1차개발
