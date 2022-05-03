@@ -1,8 +1,5 @@
-@import "reset.css";
-@import "setting.css";
-@import "main.css";
-@import "content.css";
-
-
-
-
+@import 'reset.css';
+@import 'setting.css';
+@import 'main.css';
+@import 'content.css';
+@import 'login.css';
