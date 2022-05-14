@@ -32,3 +32,7 @@
 
 # 기능참조 사이트
 - https://shiftee.io/ko/leave
+
+# 화면별 기여도
+- 로그인화면
+  - navigator : 김현주 / - driver : 김민혁
