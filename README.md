@@ -34,5 +34,8 @@
 - https://shiftee.io/ko/leave
 
 # 화면별 기여도
-- 로그인화면
-  - navigator : 김현주 / - driver : 김민혁
+- 로그인화면 
+    => navigator : 김현주 / driver : 김민혁 / 220514
+    => 
+- 목록형 
+    => navigator : 김민혁 / driver : 김현주 / 220515
