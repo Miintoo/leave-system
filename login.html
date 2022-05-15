@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="module" src="login.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <title>Document</title>
-  </head>
-  <body>
-    <div class="login">
-      <header class="login_title">로그인</header>
-      <div class="login_container">
-        <form class="login_form">
-          <div class="login_email">
-            <input placeholder="아이디" type="email" />
-          </div>
-          <div class="login_password">
-            <input placeholder="비밀번호" type="password" />
-          </div>
-          <button type="submit" class="login_button">로그인</button>
-        </form>
-      </div>
-    </div>
-  </body>
+</head>
+<body>
+<div class="login">
+    <header class="login_title">로그인</header>
+    <form class="login_form">
+        <div class="input_wrapper">
+            <input id="username" class="login_input" placeholder="아이디" type="email" required/>
+            <p class="input_error"></p>
+        </div>
+        <div class="input_wrapper">
+            <input id="password" class="login_input" placeholder="비밀번호" type="password" required
+                   pattern="[a-z]{4}"/>
+            <p class="input_error"></p>
+        </div>
+        <button type="submit" class="login_button">로그인</button>
+    </form>
+</div>
+</body>
 </html>
+// https://doqtqu.tistory.com/277
+
+<!--<form id="target" action="result.html">-->
+<!--    <label for="name">name</label> <input id="name" type="name" />-->
+<!--    <input type="submit" />-->
+<!--</form>-->
+<!--<script>-->
+<!--    var t = document.getElementById('target');-->
+<!--    t.addEventListener('submit', function(event){-->
+<!--            event.preventDefault()-->
+<!--    });-->
+<!--</script>-->

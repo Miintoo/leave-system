@@ -1,54 +1,60 @@
 .login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 350px;
-  margin: 15% auto;
-  background-color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 350px;
+    margin: 15% auto;
+    background-color: var(--text-primary);
 }
 
 .login_title {
-  height: 25%;
-  line-height: 100%;
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: var(--login-text-color);
-}
-
-.login_container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+    height: 25%;
+    line-height: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--login-text-color);
 }
 
 .login_form {
-  width: 100%;
-  text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.login_email input {
-  width: 20rem;
-  height: 3rem;
-  font-size: 1rem;
-  border: 1px solid var(--login-ui-border-color);
+.input_wrapper {
+    margin-bottom: 30px;
 }
 
-.login_password input {
-  width: 20rem;
-  height: 3rem;
-  font-size: 1rem;
-  border: 1px solid var(--login-ui-border-color);
+.login_input {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    border: 1px solid var(--login-ui-border-color);
+}
+
+.was-validated.login_input:invalid {
+    border-color: red;
+}
+
+.login_input:valid {
+    border-color: blue;
+    margin-bottom: 30px;
+}
+
+.input_error {
+    color: red;
 }
 
 .login_button {
-  width: 20rem;
-  height: 3.2rem;
-  margin-top: 1.4rem;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: white;
-  background-color: grey;
-  cursor: pointer;
+    width: 20rem;
+    height: 3.2rem;
+    margin-top: 1.4rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    background-color: grey;
+    cursor: pointer;
 }

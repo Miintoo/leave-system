@@ -31,7 +31,7 @@ function calendarInit() {
     const nextDay = endDay.getDay(); // 0 -> 일요일
 
     const yearMonth = document.querySelector('.year-month');
-    yearMonth.textContent = `${currentYear}.${currentMonth + 1}`;
+    // yearMonth.textContent = `${currentYear}.${currentMonth + 1}`;
 
     const calendar = document.querySelector('.dates');
     calendar.innerHTML = '';
